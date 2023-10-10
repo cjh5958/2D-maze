@@ -13,10 +13,53 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="來源檔案\engine">
+      <UniqueIdentifier>{e966fade-ddb1-45c1-af1b-dbc9b1f82b8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\engine">
+      <UniqueIdentifier>{2af0f853-c2ad-499c-9abc-986f7b019f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\engine\utility">
+      <UniqueIdentifier>{c41d3385-a1a7-4159-93df-9ad36a6aed9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\engine\utility">
+      <UniqueIdentifier>{b11a7efa-8669-439b-a18d-b739c4ebef21}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="engine\src\Application.cc">
+      <Filter>來源檔案\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\src\cfg.cc">
+      <Filter>來源檔案\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\src\utility\Timer.cc">
+      <Filter>來源檔案\engine\utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="engine\src\Application.h">
+      <Filter>標頭檔\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\cfg.h">
+      <Filter>標頭檔\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Engine.h">
+      <Filter>標頭檔\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\setup.h">
+      <Filter>標頭檔\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\utility\Timer.h">
+      <Filter>標頭檔\engine\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="format.cfg">
+      <Filter>資源檔</Filter>
+    </None>
   </ItemGroup>
 </Project>

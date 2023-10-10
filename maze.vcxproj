@@ -132,7 +132,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="engine\src\Application.cc" />
+    <ClCompile Include="engine\src\cfg.cc" />
+    <ClCompile Include="engine\src\utility\Timer.cc" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="engine\Engine.h" />
+    <ClInclude Include="engine\src\Application.h" />
+    <ClInclude Include="engine\src\cfg.h" />
+    <ClInclude Include="engine\src\setup.h" />
+    <ClInclude Include="engine\src\utility\Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="format.cfg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

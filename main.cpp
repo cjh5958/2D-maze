@@ -1,10 +1,5 @@
-#include <SDL.h>
+#include "engine/Engine.h"
 
-
-int main(int argc, char** argv)
-{
-	
-
-
-	return 0;
+int main(int argc, char* argv[]) {
+    return Engine::App().run();
 }
