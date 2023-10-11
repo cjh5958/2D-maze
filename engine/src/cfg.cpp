@@ -23,7 +23,7 @@ inline void trim(str &_str)
 {
     if(_str.empty()) goto END;
 
-    int fpos, epos;
+    size_t fpos, epos;
     for(fpos=0;fpos<_str.size();++fpos)
     {
         if(is_space(_str[fpos])) continue;
@@ -72,7 +72,7 @@ inline pair analyze(str _line)
 
 bool _CFG_Analyzer::fetch()
 {
-    Logger().log("Fetching data from the configuration...\n\n");
+    Utility::Logger().System("Fetching data from the configuration...\n");
 
     this->is.open(this->filepath);
     if(this->is.fail()) 

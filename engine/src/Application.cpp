@@ -58,7 +58,7 @@ int Application::run() {
     this->app_timer.pause();
     this->quit();
 
-    Logger().log("Executed application using % seconds\n", this->app_timer.time() / 1000.f);
+    Utility::Logger().System("Executed application using % seconds\n", this->app_timer.time() / 1000.f);
 
     return EXIT_SUCCESS;
 }
