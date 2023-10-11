@@ -1,5 +1,4 @@
 #include "Timer.h"
-
 using namespace Engine::Utility;
 
 
@@ -38,7 +37,7 @@ void Timer::restart() {
     this->start();
 }
 
-Uint32 Timer::time() {
+Uint64 Timer::time() {
     if(paused) return pauseTick;
     else if(started) return SDL_GetTicks64() - startTick;
     return 0;

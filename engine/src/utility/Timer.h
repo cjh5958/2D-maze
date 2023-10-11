@@ -12,14 +12,14 @@ namespace Engine
             void start();
             void restart();
             void pause();
-            Uint32 time();  //fetch time
+            Uint64 time();  //fetch time
 
             bool isPaused() {return this->paused;}
             bool isStarted() {return this->started;}
 
         private:
             bool started, paused;
-            Uint32 startTick, pauseTick;
+            Uint64 startTick, pauseTick;
 
         public:
             Timer();

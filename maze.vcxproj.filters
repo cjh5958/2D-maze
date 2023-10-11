@@ -30,13 +30,16 @@
     <ClCompile Include="main.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
-    <ClCompile Include="engine\src\Application.cc">
+    <ClCompile Include="engine\src\Application.cpp">
       <Filter>來源檔案\engine</Filter>
     </ClCompile>
-    <ClCompile Include="engine\src\cfg.cc">
+    <ClCompile Include="engine\src\cfg.cpp">
       <Filter>來源檔案\engine</Filter>
     </ClCompile>
-    <ClCompile Include="engine\src\utility\Timer.cc">
+    <ClCompile Include="engine\src\utility\Timer.cpp">
+      <Filter>來源檔案\engine\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\src\utility\Debug_Logger.cpp">
       <Filter>來源檔案\engine\utility</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,6 +59,12 @@
     <ClInclude Include="engine\src\utility\Timer.h">
       <Filter>標頭檔\engine\utility</Filter>
     </ClInclude>
+    <ClInclude Include="engine\src\utility\Debug_Logger.h">
+      <Filter>標頭檔\engine\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\utility\utility.h">
+      <Filter>標頭檔\engine\utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="format.cfg">
@@ -64,5 +73,10 @@
     <None Include="README.md">
       <Filter>資源檔</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="log.txt">
+      <Filter>資源檔</Filter>
+    </Text>
   </ItemGroup>
 </Project>

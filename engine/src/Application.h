@@ -2,7 +2,7 @@
 
 #include "setup.h"
 #include "cfg.h"
-#include "utility/Timer.h"
+#include "utility/utility.h"
 
 namespace Engine
 {
@@ -25,7 +25,7 @@ namespace Engine
         SDL_Renderer* primative_renderer;
 
         /**
-         * @brief Quit every sub-systems from third-party
+         * @brief Quit every sub-systems of third-party
          */
         void quit(void) noexcept;
 

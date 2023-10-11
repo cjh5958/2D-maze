@@ -1,4 +1,5 @@
 #include "cfg.h"
+#include "utility/utility.h"
 using namespace Engine;
 
 
@@ -71,7 +72,7 @@ inline pair analyze(str _line)
 
 bool _CFG_Analyzer::fetch()
 {
-    printf("Fetching data from the configuration...\n\n");
+    Logger().log("Fetching data from the configuration...\n\n");
 
     this->is.open(this->filepath);
     if(this->is.fail()) 
