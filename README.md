@@ -6,16 +6,20 @@
 ## TODO list
 
 * **Engine**
-    1. Tree structure
-    2. Object class (用於 Tree 結構)
-    3. AABB (碰撞)
+    1. 結構樹
+    2. Object Base ( 作為結構樹下節點的基底 )
+    3. 碰撞層
     4. Renderer
-    5. I/O control
+    5. I/O 系統
     6. Tilemap
-    7. Math
+    7. 底層數學
     8. ~~Debug Logger~~
-    9. File manager
-    10. Audio controller
-    11. Animation
+    9. 檔案管理
+    10. 聲音控制
+    11. 動畫
+    12. 腳本鏈結
 * **Game**
-    1. 想到再寫
+    1. 關卡管理
+    2. 計分系統
+    3. 計時
+    4. 地圖編輯器
