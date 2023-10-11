@@ -6,7 +6,7 @@ using namespace Engine;
 _CFG_Analyzer::_CFG_Analyzer(const char* _filepath):
     filepath(_filepath){
         if(!fetch())
-            printf("Cannot fetch data from 'format.cfg'\n\n");
+            Utility::Logger().Error("Cannot fetch data from 'format.cfg'\n\n");
 }
 
 _CFG_Analyzer::~_CFG_Analyzer()

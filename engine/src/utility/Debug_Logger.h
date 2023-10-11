@@ -192,6 +192,6 @@ namespace Engine{
 			return logger;
 		}
 
-	}	//namespace Uitlity
+	}	//namespace Utility
 
 }	//namespace Engine

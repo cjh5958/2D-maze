@@ -115,7 +115,7 @@ Debug_Logger::Debug_Logger(char const* _filename) :
 	this->hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 #endif
 
-	this->out.open(this->filename);
+	this->out.open(this->filename, std::fstream::out | std::fstream::trunc);
 }
 
 
@@ -126,7 +126,7 @@ Debug_Logger::Debug_Logger() :
 	this->hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 #endif
 
-	this->out.open(this->filename);
+	this->out.open(this->filename, std::fstream::out | std::fstream::trunc);
 }
 
 
