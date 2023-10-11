@@ -1,0 +1,3 @@
+Fetching data from the configuration...
+
+Executed application using 0.82 seconds

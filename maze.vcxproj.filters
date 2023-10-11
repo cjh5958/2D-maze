@@ -13,57 +13,57 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="來源檔案\engine">
-      <UniqueIdentifier>{e966fade-ddb1-45c1-af1b-dbc9b1f82b8c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="標頭檔\engine">
-      <UniqueIdentifier>{2af0f853-c2ad-499c-9abc-986f7b019f88}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="標頭檔\engine\utility">
+    <Filter Include="標頭檔\utility">
       <UniqueIdentifier>{c41d3385-a1a7-4159-93df-9ad36a6aed9f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="來源檔案\engine\utility">
+    <Filter Include="來源檔案\utility">
       <UniqueIdentifier>{b11a7efa-8669-439b-a18d-b739c4ebef21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\core">
+      <UniqueIdentifier>{09d4588a-0cb2-4484-afa6-37eef6a7d35b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\core">
+      <UniqueIdentifier>{4895254d-678e-4d13-901c-dee50a2c2564}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
-    <ClCompile Include="engine\src\Application.cpp">
-      <Filter>來源檔案\engine</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\src\cfg.cpp">
-      <Filter>來源檔案\engine</Filter>
-    </ClCompile>
     <ClCompile Include="engine\src\utility\Timer.cpp">
-      <Filter>來源檔案\engine\utility</Filter>
+      <Filter>來源檔案\utility</Filter>
     </ClCompile>
     <ClCompile Include="engine\src\utility\Debug_Logger.cpp">
-      <Filter>來源檔案\engine\utility</Filter>
+      <Filter>來源檔案\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\src\Application.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\src\cfg.cpp">
+      <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="engine\src\Application.h">
-      <Filter>標頭檔\engine</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\src\cfg.h">
-      <Filter>標頭檔\engine</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\Engine.h">
-      <Filter>標頭檔\engine</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\src\setup.h">
-      <Filter>標頭檔\engine</Filter>
-    </ClInclude>
     <ClInclude Include="engine\src\utility\Timer.h">
-      <Filter>標頭檔\engine\utility</Filter>
+      <Filter>標頭檔\utility</Filter>
     </ClInclude>
     <ClInclude Include="engine\src\utility\Debug_Logger.h">
-      <Filter>標頭檔\engine\utility</Filter>
+      <Filter>標頭檔\utility</Filter>
     </ClInclude>
     <ClInclude Include="engine\src\utility\utility.h">
-      <Filter>標頭檔\engine\utility</Filter>
+      <Filter>標頭檔\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\Application.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\cfg.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Engine.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\setup.h">
+      <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
