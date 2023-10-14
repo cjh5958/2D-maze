@@ -15,10 +15,11 @@ const char* Engine::error_strings[] = {
 	"Delete failed",
 	"Unavailable",
 	"Unconfigured",
+	"No permission",
 	"Unknown"
 };
 
 static_assert(
-	sizeof(Engine::error_strings) / sizeof(*Engine::error_strings) == Engine::Error::ERR_COUNT-1 ,
+	sizeof(Engine::error_strings) / sizeof(*Engine::error_strings) == Engine::Error::ERR_COUNT ,
 	"the size of error_strings doesn't match the size of Error"
 );

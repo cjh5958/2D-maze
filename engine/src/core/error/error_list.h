@@ -18,8 +18,8 @@ namespace Engine{
 		ERR_CREATE_FAILED,	/// creation of a object is failed deu to some reasons
 		ERR_DELETE_FAILED,	/// deletion of a object is failed deu to some reasons
 		ERR_UNAVAILABLE,	/// operation is not available now
-		ERR_NO_PERMISSION,	/// operation is not allowed
 		ERR_UNCONFIGURED,	/// application did not config completely
+		ERR_NO_PERMISSION,	/// operation is not allowed
 		ERR_UNKNOWN,		/// unknown error
 		ERR_COUNT,	// Not being returned, value represents the number of errors(except OK)
 	};	//ERROR
