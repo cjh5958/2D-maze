@@ -9,10 +9,6 @@ Application::Application():
         SDL_Init(SDL_INIT_EVERYTHING);
 }
 
-Application::~Application(){
-    
-}
-
 void Application::quit() noexcept
 {
     SDL_DestroyWindow(this->primative_window);

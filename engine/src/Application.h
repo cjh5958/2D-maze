@@ -7,7 +7,7 @@
 
 namespace Engine
 {
-    using Utility::Timer;
+    using Utility::_Timer;
 
     class Application
     {
@@ -25,7 +25,7 @@ namespace Engine
         bool debug;
         bool executing;
         _CFG_Analyzer config;
-        Timer app_timer;
+        _Timer app_timer;
         SDL_Window* primative_window;
 
         /**
@@ -35,7 +35,7 @@ namespace Engine
 
     public:
         Application();
-        ~Application();
+        ~Application(){}
 
     };  //class Application
 

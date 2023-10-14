@@ -2,15 +2,14 @@
 using namespace Engine::Utility;
 
 
-Timer::Timer() {
-    this->startTick = 0;
-    this->pauseTick = 0;
-    this->paused = false;
-    this->started = false;
-}
+_Timer::_Timer() :
+    startTick(0),
+    pauseTick(0),
+    paused(false),
+    started(false){}
 
 
-void Timer::start() {
+void _Timer::start() {
     if(!started && !paused) {
         /*First time*/
         this->started = true;
@@ -23,7 +22,7 @@ void Timer::start() {
     }
 }
 
-void Timer::pause() {
+void _Timer::pause() {
     if(started) {
         this->paused = true;
         this->started = false;
@@ -31,13 +30,13 @@ void Timer::pause() {
     }
 }
 
-void Timer::restart() {
+void _Timer::restart() {
     this->started = false;
     this->paused = false;
     this->start();
 }
 
-Uint64 Timer::time() {
+Uint64 _Timer::time() {
     if(paused) return pauseTick;
     else if(started) return SDL_GetTicks64() - startTick;
     return 0;

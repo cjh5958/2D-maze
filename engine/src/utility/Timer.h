@@ -6,7 +6,7 @@ namespace Engine
 {
     namespace Utility
     {
-        class Timer
+        class _Timer
         {
         public:
             void start();
@@ -14,15 +14,15 @@ namespace Engine
             void pause();
             Uint64 time();  //fetch time
 
-            bool isPaused() {return this->paused;}
-            bool isStarted() {return this->started;}
+            bool Paused() {return this->paused;}
+            bool Started() {return this->started;}
 
-        private:
+        protected:
             bool started, paused;
             Uint64 startTick, pauseTick;
 
         public:
-            Timer();
+            _Timer();
         };
     }
 }
