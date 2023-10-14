@@ -30,7 +30,7 @@ inline void trim(str &_str)
         break;
     }
 
-    for(epos=_str.size()-1;epos>=0;--epos)
+    for(epos=_str.size()-1;epos>0;--epos)
     {
         if(is_space(_str[epos])) continue;
         break;
@@ -90,6 +90,8 @@ bool _CFG_Analyzer::fetch()
     }
 
     this->is.close();
+
+    Utility::Logger().Success("Application configuration has been set up already\n");
 
     return true;
 }

@@ -25,6 +25,12 @@
     <Filter Include="來源檔案\core">
       <UniqueIdentifier>{4895254d-678e-4d13-901c-dee50a2c2564}</UniqueIdentifier>
     </Filter>
+    <Filter Include="標頭檔\core\error">
+      <UniqueIdentifier>{7f94ff36-a8ff-4cb4-a70e-5b49a8a87b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\core\object">
+      <UniqueIdentifier>{0bc04959-51b8-48e7-b7e8-063218ec543c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -41,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="engine\src\cfg.cpp">
       <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\src\core\error\error_list.cpp">
+      <Filter>來源檔案\core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +73,9 @@
     </ClInclude>
     <ClInclude Include="engine\src\setup.h">
       <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\core\error\error_list.h">
+      <Filter>標頭檔\core\error</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

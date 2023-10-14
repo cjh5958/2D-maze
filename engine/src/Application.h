@@ -3,6 +3,7 @@
 #include "setup.h"
 #include "cfg.h"
 #include "utility/utility.h"
+#include "core/error/error_list.h"
 
 namespace Engine
 {
@@ -11,18 +12,21 @@ namespace Engine
     class Application
     {
     public:
+
+        void create_window();
+
         /**
-         * @brief Start the event loop of the Application.
+         * @brief Start the main loop of the application.
         */
-        int run();
+        Error run();
 
     private:
+
         bool debug;
         bool executing;
         _CFG_Analyzer config;
         Timer app_timer;
         SDL_Window* primative_window;
-        SDL_Renderer* primative_renderer;
 
         /**
          * @brief Quit every sub-systems of third-party
@@ -33,13 +37,16 @@ namespace Engine
         Application();
         ~Application();
 
-    };
+    };  //class Application
 
     /**
-     * @brief A instance of the Application
+     * @brief Instance of the application
+     * 
+     * @return Application
     */
     inline Application &App(void) {
         static Application app;
         return app;
     }
-}
+
+}   //namespace Engine

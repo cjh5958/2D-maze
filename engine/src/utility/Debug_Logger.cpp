@@ -2,7 +2,7 @@
 using Engine::Utility::Debug_Logger;
 
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 
 void Debug_Logger::set_text(C_Color color)
 {
@@ -111,7 +111,7 @@ void Debug_Logger::Success(char const* _Format)
 Debug_Logger::Debug_Logger(char const* _filename) :
 	filename(_filename){
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 	this->hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 #endif
 
@@ -122,7 +122,7 @@ Debug_Logger::Debug_Logger(char const* _filename) :
 Debug_Logger::Debug_Logger() :
 	filename("log.txt"){
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 	this->hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 #endif
 

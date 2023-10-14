@@ -4,8 +4,7 @@ using namespace Engine;
 Application::Application():
     config("format.cfg"),
     executing(false),
-    primative_window(nullptr),
-    primative_renderer(nullptr){
+    primative_window(nullptr){
         this->debug = to_bool(config.get("debug_mode"));
         SDL_Init(SDL_INIT_EVERYTHING);
 }
@@ -16,12 +15,11 @@ Application::~Application(){
 
 void Application::quit() noexcept
 {
-    SDL_DestroyRenderer(this->primative_renderer);
     SDL_DestroyWindow(this->primative_window);
     SDL_Quit();
 }
 
-int Application::run() {
+Error Application::run() {
     this->executing = true;
     this->app_timer.start();
 
@@ -46,13 +44,12 @@ int Application::run() {
         flg
     );
 
-    this->primative_renderer = SDL_CreateRenderer(this->primative_window, -1, 0);
-
     SDL_Event e;
     while(executing) {
         if(SDL_WaitEvent(&e) != 0){
             if(e.type == SDL_QUIT) this->executing = false;
         }
+        //break;
     }
 
     this->app_timer.pause();
@@ -60,5 +57,5 @@ int Application::run() {
 
     Utility::Logger().System("Executed application using % seconds\n", this->app_timer.time() / 1000.f);
 
-    return EXIT_SUCCESS;
+    return Error::OK;
 }

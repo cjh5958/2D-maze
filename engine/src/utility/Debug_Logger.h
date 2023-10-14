@@ -4,7 +4,6 @@
 #include <Windows.h>
 
 namespace Engine{
-
 	namespace Utility{
 
 		/*
@@ -27,7 +26,7 @@ namespace Engine{
 		class Debug_Logger
 		{
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 			enum C_Color {
 				C_White,
 				C_Green,
@@ -69,7 +68,7 @@ namespace Engine{
 			char const* filename;
 			std::ofstream out;
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 			/* 
 			* @brief To control terminal in WIN64
 			*/
@@ -88,12 +87,12 @@ namespace Engine{
 			void Warn(char const* _Format, T const& _value, Targs const &...args)
 			{
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 				set_text(C_Purple);
 #endif
 				this->log("[WARN] ");
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 				set_text(C_White);
 #endif
 
@@ -106,12 +105,12 @@ namespace Engine{
 			void Info(char const* _Format, T const& _value, Targs const &...args)
 			{
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 				set_text(C_Cyan);
 #endif
 				this->log("[INFO] ");
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 				set_text(C_White);
 #endif
 
@@ -124,13 +123,13 @@ namespace Engine{
 			void System(char const* _Format, T const& _value, Targs const &...args)
 			{
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 				set_text(C_Gray);
 #endif
 
 				this->log("[SYSTEM] ");
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 				set_text(C_White);
 #endif
 
@@ -143,16 +142,16 @@ namespace Engine{
 			void Error(char const* _Format, T const& _value, Targs const &...args)
 			{
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 				set_text(C_Red);
 #endif
 				this->log("[ERROR] ");
 
-#if defined(_WIN32)
+				this->log(_Format, _value, args...);
+
+#if defined(_WIN64)
 				set_text(C_White);
 #endif
-
-				this->log(_Format, _value, args...);
 			}
 
 			void Success(char const*);
@@ -161,12 +160,12 @@ namespace Engine{
 			void Success(char const* _Format, T const& _value, Targs const &...args)
 			{
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 				set_text(C_Yellow);
 #endif
 				this->log("[SUCCESS] ");
 
-#if defined(_WIN32)
+#if defined(_WIN64)
 				set_text(C_White);
 #endif
 
@@ -182,11 +181,12 @@ namespace Engine{
 
 		};	//class Debug_Logger
 
-
-		/*
-		* @brief instance of Debug_Logger
+		/**
+		 * @brief Instance of Debug_Logger
+		 * 
+		 * @return Debug_Logger
 		*/
-		inline Debug_Logger& Logger(void)
+		inline Debug_Logger &Logger(void)
 		{
 			static Debug_Logger logger;
 			return logger;
