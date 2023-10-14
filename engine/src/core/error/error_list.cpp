@@ -8,7 +8,7 @@ const char* Engine::error_strings[] = {
 	"No such file",
 	"File no permission",
 	"File read failed",
-	"File_EOF",
+	"File EOF",
 	"Timeout",
 	"Out of range",
 	"Create failed",
@@ -20,6 +20,6 @@ const char* Engine::error_strings[] = {
 };
 
 static_assert(
-	sizeof(Engine::error_strings) / sizeof(*Engine::error_strings) == Engine::Error::ERR_COUNT ,
+	sizeof(Engine::error_strings) / sizeof(*Engine::error_strings) == Engine::Error::ERR_COUNT ,		//length check
 	"the size of error_strings doesn't match the size of Error"
 );

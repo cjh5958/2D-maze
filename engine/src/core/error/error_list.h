@@ -22,7 +22,7 @@ namespace Engine{
 		ERR_NO_PERMISSION,	/// operation is not allowed
 		ERR_UNKNOWN,		/// unknown error
 		ERR_COUNT,	// Not being returned, value represents the number of errors(except OK)
-	};	//ERROR
+	};	//Error
 
 	extern const char *error_strings[];
 
