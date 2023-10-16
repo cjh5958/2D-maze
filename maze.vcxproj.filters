@@ -31,6 +31,9 @@
     <Filter Include="標頭檔\core\object">
       <UniqueIdentifier>{0bc04959-51b8-48e7-b7e8-063218ec543c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="標頭檔\core\math">
+      <UniqueIdentifier>{de43c2d8-ce19-4a49-a332-22a057937f45}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -76,6 +79,15 @@
     </ClInclude>
     <ClInclude Include="engine\src\core\error\error_list.h">
       <Filter>標頭檔\core\error</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\core\typedefs.h">
+      <Filter>標頭檔\core</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\core\math\func.h">
+      <Filter>標頭檔\core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\core\math\defs.h">
+      <Filter>標頭檔\core\math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

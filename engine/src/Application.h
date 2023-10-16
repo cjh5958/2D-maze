@@ -24,6 +24,9 @@ namespace Engine
 
         bool debug;
         bool executing;
+
+        Uint32 flg = 0U;
+
         _CFG_Analyzer config;
         _Timer app_timer;
         SDL_Window* primative_window;

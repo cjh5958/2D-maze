@@ -25,7 +25,6 @@ Error Application::run() {
     if(config.get("window_y")=="center") display_y = SDL_WINDOWPOS_CENTERED;
     else display_y = atoi(config.get("window_y").c_str());
 
-    Uint32 flg = 0U;
     if(to_bool(config.get("always_on_top")))    flg |= SDL_WINDOW_ALWAYS_ON_TOP;
     if(to_bool(config.get("highdpi")))          flg |= SDL_WINDOW_ALLOW_HIGHDPI;
     if(to_bool(config.get("fullscreen")))       flg |= SDL_WINDOW_FULLSCREEN_DESKTOP;
@@ -37,7 +36,7 @@ Error Application::run() {
         display_y,
         atoi(config.get("window_w").c_str()),
         atoi(config.get("window_h").c_str()),
-        flg
+        this->flg
     );
 
     SDL_Event e;
