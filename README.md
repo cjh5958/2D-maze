@@ -5,27 +5,34 @@
 
 ## TODO list
 
-* **Engine**
-    * 結構樹
-    * Object Base ( 作為結構樹下節點的基底 )
-    * 碰撞層
-    * Error
-    * Renderer
-    * I/O 系統
-    * Signal
-    * Tilemap
-    * Math
-    * ~~Debug Logger~~
-    * 檔案管理
-    * 聲音控制
-    * 動畫
-    * 腳本鏈結
+Renderer  
+I/O   
+Signal system  
+Tilemap  
+聲音控制  
+動畫  
+腳本鏈結  
     
+    
+## File Map
+```bash
+Engine.h
+   │
+   ├── core
+   │    ├── error
+   │    │     └── error list
+   │    ├── math
+   │    │     ├── math funcs
+   │    │     ├── math defs
+   │    │     ├── vector2
+   │    │     └── aabb
+   │    └── object
+   ├── utility
+   │    ├── Debug Logger
+   │    ├── Timer
+   │    └── utility
+   ├── Application
+   ├── cfg
+   └── setup
 
-
-
-* **Game**
-    * 關卡管理
-    * 計分系統
-    * 計時
-    * 地圖編輯器
+```
