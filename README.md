@@ -6,15 +6,16 @@
 ## TODO list
 
 Renderer  
-I/O   
+I/O  
 Signal system  
+Scene
 Tilemap  
 聲音控制  
 動畫  
 腳本鏈結  
     
     
-## File Map
+## Structure Map
 
 ```bash
 Engine.h
@@ -28,17 +29,18 @@ Engine.h
 │   │   │
 │   │   ├── math funcs
 │   │   ├── math defs
-│   │   ├── vector2
 │   │   └── aabb
-│   └── object
+│   ├── object
+│   ├── scene
+│   └── typedefs
 │
 ├── utility
 │   │
-│   ├── Debug Logger
-│   ├── Timer
-│   └── utility
+│   ├── debug logger
+│   ├── timer
+│   └── utility.h
 │
-├── Application
+├── application
 ├── cfg
-└── setup
+└── setup.h
 ```

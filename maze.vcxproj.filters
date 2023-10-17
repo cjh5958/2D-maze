@@ -34,6 +34,12 @@
     <Filter Include="標頭檔\core\math">
       <UniqueIdentifier>{de43c2d8-ce19-4a49-a332-22a057937f45}</UniqueIdentifier>
     </Filter>
+    <Filter Include="標頭檔\core\scene">
+      <UniqueIdentifier>{4824feb8-180f-4bca-805d-e45c874ad65a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\test">
+      <UniqueIdentifier>{a26fbaca-edce-4bf4-a918-ab5cdf894eec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -53,6 +59,9 @@
     </ClCompile>
     <ClCompile Include="engine\src\core\error\error_list.cpp">
       <Filter>來源檔案\core</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\test\test_math_func.h">
+      <Filter>來源檔案\test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +97,9 @@
     </ClInclude>
     <ClInclude Include="engine\src\core\math\defs.h">
       <Filter>標頭檔\core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\test\test.h">
+      <Filter>來源檔案\test</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

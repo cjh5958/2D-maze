@@ -137,6 +137,7 @@
     <ClCompile Include="engine\src\Application.cpp" />
     <ClCompile Include="engine\src\cfg.cpp" />
     <ClCompile Include="engine\src\utility\Timer.cpp" />
+    <ClCompile Include="engine\test\test_math_func.h" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +152,7 @@
     <ClInclude Include="engine\src\setup.h" />
     <ClInclude Include="engine\src\utility\Timer.h" />
     <ClInclude Include="engine\src\utility\utility.h" />
+    <ClInclude Include="engine\test\test.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="format.cfg" />

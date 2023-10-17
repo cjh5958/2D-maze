@@ -5,8 +5,7 @@ using namespace Engine;
 
 _CFG_Analyzer::_CFG_Analyzer(const char* _filepath):
     filepath(_filepath){
-        if(!fetch())
-            Utility::Logger().Error("Cannot fetch data from 'format.cfg'\n\n");
+        if(!fetch()) Utility::Logger().Error("Cannot fetch data from %\n", filepath);
 }
 
 _CFG_Analyzer::~_CFG_Analyzer()
@@ -21,7 +20,7 @@ inline bool is_space(const char ch)
 
 inline void trim(str &_str)
 {
-    if(_str.empty()) goto END;
+    if(_str.empty()) return;
 
     size_t fpos, epos;
     for(fpos=0;fpos<_str.size();++fpos)
@@ -37,8 +36,6 @@ inline void trim(str &_str)
     }
 
     _str = _str.substr(fpos, epos-fpos+1);
-
-    END:;
 }
 
 
