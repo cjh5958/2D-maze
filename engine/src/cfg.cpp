@@ -73,7 +73,7 @@ bool _CFG_Analyzer::fetch()
 
     this->is.open(this->filepath);
     if(this->is.fail()) 
-        return false;
+        return 0;
 
     this->map.clear();
 
@@ -88,9 +88,9 @@ bool _CFG_Analyzer::fetch()
 
     this->is.close();
 
-    Utility::Logger().Success("Application configuration has been set up already\n");
+    Utility::Logger().Success("Application configuration has been setup already\n");
 
-    return true;
+    return 1;
 }
 
 str _CFG_Analyzer::get(const str key)

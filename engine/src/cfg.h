@@ -36,7 +36,25 @@ namespace Engine{
 
     inline bool to_bool(const str value)
     {
-        return value == "true";
+        if (value.empty()) return 0;
+        switch (value[0])
+        {
+        case 'T':
+        case 't':
+        case '1':
+            return 1;
+        case 'F':
+        case 'f':
+            return 0;
+        default:
+            return 0;
+        }
+        return atoi(value.c_str()) > 0;
+    }
+
+    inline int to_int(str value)
+    {
+        return atoi(value.c_str());
     }
 
 }   //namespace Engine

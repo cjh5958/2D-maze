@@ -5,7 +5,7 @@ Application::Application():
     config("format.cfg"),
     executing(false),
     primative_window(nullptr){
-        this->debug = to_bool(config.get("debug_mode"));
+        this->debug = to_bool(config.get("App.Debug.Enable"));
         SDL_Init(SDL_INIT_EVERYTHING);
 }
 
@@ -16,26 +16,28 @@ void Application::quit() noexcept
 }
 
 Error Application::run() {
-    this->executing = true;
+    this->executing = 1;
     this->app_timer.start();
 
-    int display_x, display_y;
-    if(config.get("window_x")=="center") display_x = SDL_WINDOWPOS_CENTERED;
-    else display_x = atoi(config.get("window_x").c_str());
-    if(config.get("window_y")=="center") display_y = SDL_WINDOWPOS_CENTERED;
-    else display_y = atoi(config.get("window_y").c_str());
+    Utility::Logger().System("Debugging mode has been enabled.\n");
 
-    if(to_bool(config.get("always_on_top")))    flg |= SDL_WINDOW_ALWAYS_ON_TOP;
-    if(to_bool(config.get("highdpi")))          flg |= SDL_WINDOW_ALLOW_HIGHDPI;
-    if(to_bool(config.get("fullscreen")))       flg |= SDL_WINDOW_FULLSCREEN_DESKTOP;
-    if(to_bool(config.get("hidden")))           flg |= SDL_WINDOW_HIDDEN;
+    int display_x, display_y;
+    if(to_int(config.get("window.x"))==-1) display_x = SDL_WINDOWPOS_CENTERED;
+    else display_x = to_int(config.get("window.x"));
+    if(to_int(config.get("window.y"))==-1) display_y = SDL_WINDOWPOS_CENTERED;
+    else display_y = to_int(config.get("window.y"));
+
+    if(to_bool(config.get("window.AlwaysOnTop")))      flg |= SDL_WINDOW_ALWAYS_ON_TOP;
+    if(to_bool(config.get("window.Highdpi")))          flg |= SDL_WINDOW_ALLOW_HIGHDPI;
+    if(to_bool(config.get("window.Fullscreen")))       flg |= SDL_WINDOW_FULLSCREEN_DESKTOP;
+    if(to_bool(config.get("window.Hidden")))           flg |= SDL_WINDOW_HIDDEN;
 
     this->primative_window = SDL_CreateWindow(
-        config.get("window_name").c_str(),
+        config.get("window.Name").c_str(),
         display_x,
         display_y,
-        atoi(config.get("window_w").c_str()),
-        atoi(config.get("window_h").c_str()),
+        to_int(config.get("window.w")),
+        to_int(config.get("window.h")),
         this->flg
     );
 

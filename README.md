@@ -5,15 +5,14 @@
 
 ## TODO list
 
-Renderer  
-I/O  
-Signal system  
-Scene
-Tilemap  
-聲音控制  
-動畫  
-腳本鏈結  
-    
+rendering  
+inputs analyzing  
+signal system  
+scene  
+tilemap  
+sounds  
+simple scripts  
+
     
 ## Structure Map
 
