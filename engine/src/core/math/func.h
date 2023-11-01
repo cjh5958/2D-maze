@@ -69,6 +69,9 @@ public:
 	static inline double ceil(double _x) { return ::ceil(_x); }
 	static inline float ceil(float _x) { return ::ceilf(_x); }
 
+	static inline double round(double _x) { return ::round(_x); }
+	static inline float round(float _x) { return ::roundf(_x); }
+
 	static inline double pow(double _x, double _y) { return ::pow(_x, _y); }
 	static inline float pow(float _x, float _y) { return ::powf(_x, _y); }
 

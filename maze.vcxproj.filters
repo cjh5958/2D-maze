@@ -40,6 +40,9 @@
     <Filter Include="來源檔案\test">
       <UniqueIdentifier>{a26fbaca-edce-4bf4-a918-ab5cdf894eec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="標頭檔\core\ui">
+      <UniqueIdentifier>{cfc21561-1530-4fe3-9c2a-c18b92e26b6d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,6 +65,9 @@
     </ClCompile>
     <ClCompile Include="engine\test\test_math_func.h">
       <Filter>來源檔案\test</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\src\core\math\vector2.cpp">
+      <Filter>來源檔案\core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="engine\test\test.h">
       <Filter>來源檔案\test</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\core\math\vector2.h">
+      <Filter>標頭檔\core\math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

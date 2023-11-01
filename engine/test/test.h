@@ -6,6 +6,7 @@
 #include <iostream>
 
 #include "../src/core/math/func.h"
+#include "../src/core/math/Vector2.h"
 
 using namespace std;
 

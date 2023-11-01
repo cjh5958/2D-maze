@@ -31,15 +31,15 @@ Engine.h
 ¢x   ¢x   ¢u¢w¢w math defs
 ¢x   ¢x   ¢|¢w¢w aabb
 ¢x   ¢u¢w¢w object
+¢x   ¢u¢w¢w ui
 ¢x   ¢u¢w¢w scene
-¢x   ¢|¢w¢w typedefs
+¢x   ¢|¢w¢w typedefs.h
 ¢x
 ¢u¢w¢w utility
 ¢x   ¢x
 ¢x   ¢u¢w¢w debug logger
 ¢x   ¢u¢w¢w timer
 ¢x   ¢|¢w¢w utility.h
-¢x
 ¢u¢w¢w application
 ¢u¢w¢w cfg
 ¢|¢w¢w setup.h
