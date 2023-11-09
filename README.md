@@ -1,4 +1,4 @@
-2D °g®c¹CÀ¸ - C++
+2D Game of maze using self-made engine - C++
 ===
 
 Implement a simple game engine to stand for the game with [SDL2](https://github.com/libsdl-org/SDL.git).  
