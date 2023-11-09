@@ -18,44 +18,44 @@ engine configurating
 
 ```bash
 Engine.h
-¢x
-¢u¢w¢w core
-¢x   ¢x
-¢x   ¢u¢w¢w error
-¢x   ¢x   ¢x
-¢x   ¢x   ¢u¢w¢w error list
-¢x   ¢x   ¢|¢w¢w error catch
-¢x   ¢u¢w¢w math
-¢x   ¢x   ¢x
-¢x   ¢x   ¢u¢w¢w crypto
-¢x   ¢x   ¢u¢w¢w math defs
-¢x   ¢x   ¢|¢w¢w math funcs
-¢x   ¢u¢w¢w object
-¢x   ¢x   ¢x
-¢x   ¢x   ¢u¢w¢w container
-¢x   ¢x   ¢x   ¢x
-¢x   ¢x   ¢x   ¢u¢w¢w hashmap
-¢x   ¢x   ¢x   ¢|¢w¢w sort array
-¢x   ¢x   ¢u¢w¢w script instance
-¢x   ¢x   ¢u¢w¢w script template
-¢x   ¢x   ¢|¢w¢w object.h
-¢x   ¢|¢w¢w render
-¢u¢w¢w scene
-¢x   ¢x
-¢x   ¢u¢w¢w 2d
-¢x   ¢u¢w¢w audio
-¢x   ¢|¢w¢w gui
-¢x       ¢x
-¢x       ¢u¢w¢w button
-¢x       ¢u¢w¢w label
-¢x       ¢|¢w¢w line edit
-¢u¢w¢w string
-¢u¢w¢w utility
-¢x   ¢x
-¢x   ¢u¢w¢w debug logger
-¢x   ¢u¢w¢w timer
-¢x   ¢|¢w¢w utility.h
-¢u¢w¢w application
-¢u¢w¢w cfg
-¢|¢w¢w setup.h
+â”‚
+â”œâ”€â”€ core
+â”‚   â”‚
+â”‚   â”œâ”€â”€ error
+â”‚   â”‚   â”‚
+â”‚   â”‚   â”œâ”€â”€ error list
+â”‚   â”‚   â””â”€â”€ error catch
+â”‚   â”œâ”€â”€ math
+â”‚   â”‚   â”‚
+â”‚   â”‚   â”œâ”€â”€ crypto
+â”‚   â”‚   â”œâ”€â”€ math defs
+â”‚   â”‚   â””â”€â”€ math funcs
+â”‚   â”œâ”€â”€ object
+â”‚   â”‚   â”‚
+â”‚   â”‚   â”œâ”€â”€ container
+â”‚   â”‚   â”‚   â”‚
+â”‚   â”‚   â”‚   â”œâ”€â”€ hashmap
+â”‚   â”‚   â”‚   â””â”€â”€ sort array
+â”‚   â”‚   â”œâ”€â”€ script instance
+â”‚   â”‚   â”œâ”€â”€ script template
+â”‚   â”‚   â””â”€â”€ object.h
+â”‚   â””â”€â”€ render
+â”œâ”€â”€ scene
+â”‚   â”‚
+â”‚   â”œâ”€â”€ 2d
+â”‚   â”œâ”€â”€ audio
+â”‚   â””â”€â”€ gui
+â”‚       â”‚
+â”‚       â”œâ”€â”€ button
+â”‚       â”œâ”€â”€ label
+â”‚       â””â”€â”€ line edit
+â”œâ”€â”€ string
+â”œâ”€â”€ utility
+â”‚   â”‚
+â”‚   â”œâ”€â”€ debug logger
+â”‚   â”œâ”€â”€ timer
+â”‚   â””â”€â”€ utility.h
+â”œâ”€â”€ application
+â”œâ”€â”€ cfg
+â””â”€â”€ setup.h
 ```
