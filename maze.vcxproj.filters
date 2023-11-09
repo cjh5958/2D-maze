@@ -95,9 +95,6 @@
     <ClInclude Include="engine\src\core\error\error_list.h">
       <Filter>標頭檔\core\error</Filter>
     </ClInclude>
-    <ClInclude Include="engine\src\core\typedefs.h">
-      <Filter>標頭檔\core</Filter>
-    </ClInclude>
     <ClInclude Include="engine\src\core\math\func.h">
       <Filter>標頭檔\core\math</Filter>
     </ClInclude>

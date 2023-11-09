@@ -146,7 +146,6 @@
     <ClInclude Include="engine\src\core\math\defs.h" />
     <ClInclude Include="engine\src\core\math\func.h" />
     <ClInclude Include="engine\src\core\math\vector2.h" />
-    <ClInclude Include="engine\src\core\typedefs.h" />
     <ClInclude Include="engine\src\utility\Debug_Logger.h" />
     <ClInclude Include="engine\Engine.h" />
     <ClInclude Include="engine\src\Application.h" />

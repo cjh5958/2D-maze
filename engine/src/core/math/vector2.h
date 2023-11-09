@@ -1,8 +1,6 @@
 #pragma once
 
-#include <cstdio>
 #include "func.h"
-
 #include <ostream>
 
 
@@ -30,7 +28,7 @@ namespace Engine{
 		};
 
 		inline float &operator[](int _idx) {
-			/// warn: unsafe operation, need to check if it's _idx < 2
+			/// warn: unsafe operation, need to check if it's 0 <= _idx < 2
 			return coord[_idx];
 		}
 
@@ -55,27 +53,30 @@ namespace Engine{
 		Vector2 operator/(const float& _num) const;
 		void operator/=(const float& _num);
 
-		inline Vector2 operator+(const Vector2& _vector2) const;
-		inline Vector2 operator-(const Vector2& _vector2) const;
-		inline Vector2 operator*(const Vector2& _vector2) const;
-		inline Vector2 operator/(const Vector2& _vector2) const;
+		inline Vector2 operator+(const Vector2& _vector2) const { return Vector2(x + _vector2.x, y + _vector2.y); }
+		inline Vector2 operator-(const Vector2& _vector2) const { return Vector2(x - _vector2.x, y - _vector2.y); }
+		inline Vector2 operator*(const Vector2& _vector2) const { return Vector2(x * _vector2.x, y * _vector2.y); }
+		inline Vector2 operator/(const Vector2& _vector2) const { return Vector2(x / _vector2.x, y / _vector2.y); }
+
+		void operator+=(const Vector2& _vector2);
+		void operator-=(const Vector2& _vector2);
+		void operator*=(const Vector2& _vector2);
+		void operator/=(const Vector2& _vector2);
 
 		//operator Vector2i() const;
 
-		inline Vector2() {}
-		inline Vector2(const float _x, const float _y) 
-		{
-			x = _x;
-			y = _y;
-		}
+		Vector2();
+		Vector2(const float _x, const float _y);
 
-		friend std::ostream& operator<<(std::ostream& ofs, const Vector2 &_vector2) {
+		friend std::ostream& operator<<(std::ostream &ofs, const Vector2 &_vector2) {
 			return ofs << '(' << _vector2.x << ", " << _vector2.y << ')';
 		}
 
 	};	//class Vector2
 
 	inline Vector2 floor(Vector2 _vector2) { return _vector2.floor(); }
+	inline Vector2 ceil(Vector2 _vector2) { return _vector2.ceil(); }
+	inline Vector2 round(Vector2 _vector2) { return _vector2.round(); }
 
 }	//namespace Engine
 

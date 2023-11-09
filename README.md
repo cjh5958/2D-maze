@@ -1,18 +1,18 @@
 2D 迷宮遊戲 - C++
 ===
 
-使用 [SDL2](https://github.com/libsdl-org/SDL.git) 實現Input處理與圖形渲染。
+Implement a simple game engine to stand for the game with [SDL2](https://github.com/libsdl-org/SDL.git).  
 
 ## TODO list
 
-rendering  
+rendering system  
 inputs analyzing  
 signal system  
 scene  
 tilemap  
 sounds  
 simple scripts  
-
+engine configurating  
     
 ## Structure Map
 
@@ -23,17 +23,32 @@ Engine.h
 │   │
 │   ├── error
 │   │   │
-│   │   └── error list
+│   │   ├── error list
+│   │   └── error catch
 │   ├── math
 │   │   │
-│   │   ├── math funcs
+│   │   ├── crypto
 │   │   ├── math defs
-│   │   └── aabb
+│   │   └── math funcs
 │   ├── object
-│   ├── ui
-│   ├── scene
-│   └── typedefs.h
-│
+│   │   │
+│   │   ├── container
+│   │   │   │
+│   │   │   ├── hashmap
+│   │   │   └── sort array
+│   │   ├── script instance
+│   │   ├── script template
+│   │   └── object.h
+│   └── render
+├── scene
+│   ├── 2d
+│   ├── audio
+│   └── gui
+│       │
+│       ├── button
+│       ├── label
+│       └── line edit
+├── string
 ├── utility
 │   │
 │   ├── debug logger

@@ -1,9 +1,16 @@
 #include "vector2.h"
-using namespace Engine;
+using Engine::Vector2;
+
+inline Vector2::Vector2() {}
+
+inline Vector2::Vector2(const float _x, const float _y) {
+	x = _x;
+	y = _y;
+}
 
 Vector2 Vector2::floor() const
 {
-	Vector2 v = (*this);
+	Vector2 v = *this;
 	v.x = Math::floor(v.x);
 	v.y = Math::floor(v.y);
 	return v;
@@ -11,7 +18,7 @@ Vector2 Vector2::floor() const
 
 Vector2 Vector2::ceil() const
 {
-	Vector2 v = (*this);
+	Vector2 v = *this;
 	v.x = Math::ceil(v.x);
 	v.y = Math::ceil(v.y);
 	return v;
@@ -19,7 +26,7 @@ Vector2 Vector2::ceil() const
 
 Vector2 Vector2::round() const
 {
-	Vector2 v = (*this);
+	Vector2 v = *this;
 	v.x = Math::round(v.x);
 	v.y = Math::round(v.y);
 	return v;
@@ -51,7 +58,33 @@ Vector2 Vector2::operator/(const float& _num) const
 	return Vector2(x/_num, y/_num);
 }
 
-void Engine::Vector2::operator/=(const float& _num)
+void Vector2::operator/=(const float& _num)
 {
+	x /= _num;
+	y /= _num;
+}
+
+void Vector2::operator+=(const Vector2& _vector2)
+{
+	x += _vector2.x;
+	y += _vector2.y;
+}
+
+void Vector2::operator-=(const Vector2& _vector2)
+{
+	x -= _vector2.x;
+	y -= _vector2.y;
+}
+
+void Vector2::operator*=(const Vector2& _vector2)
+{
+	x *= _vector2.x;
+	y *= _vector2.y;
+}
+
+void Vector2::operator/=(const Vector2& _vector2)
+{
+	x /= _vector2.x;
+	y /= _vector2.y;
 }
 
