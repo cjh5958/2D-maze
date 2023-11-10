@@ -34,14 +34,11 @@
     <Filter Include="標頭檔\core\math">
       <UniqueIdentifier>{de43c2d8-ce19-4a49-a332-22a057937f45}</UniqueIdentifier>
     </Filter>
-    <Filter Include="標頭檔\core\scene">
-      <UniqueIdentifier>{4824feb8-180f-4bca-805d-e45c874ad65a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="來源檔案\test">
       <UniqueIdentifier>{a26fbaca-edce-4bf4-a918-ab5cdf894eec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="標頭檔\core\ui">
-      <UniqueIdentifier>{cfc21561-1530-4fe3-9c2a-c18b92e26b6d}</UniqueIdentifier>
+    <Filter Include="標頭檔\scene">
+      <UniqueIdentifier>{472aa5c0-dd46-4965-b7bc-fcb18a7468de}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +64,9 @@
       <Filter>來源檔案\test</Filter>
     </ClCompile>
     <ClCompile Include="engine\src\core\math\vector2.cpp">
+      <Filter>來源檔案\core</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\src\core\error\error_macro.cpp">
       <Filter>來源檔案\core</Filter>
     </ClCompile>
   </ItemGroup>
@@ -106,6 +106,15 @@
     </ClInclude>
     <ClInclude Include="engine\src\core\math\vector2.h">
       <Filter>標頭檔\core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\core\error\error_macro.h">
+      <Filter>標頭檔\core\error</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\core\error\error.h">
+      <Filter>標頭檔\core\error</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\src\core\typedef.h">
+      <Filter>標頭檔\core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,8 +1,5 @@
 #pragma once
 
-#define ERROR_LIST -1
-
-
 namespace Engine{
 
 	enum Error {

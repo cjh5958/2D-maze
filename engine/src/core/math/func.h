@@ -7,8 +7,6 @@
 #include <cstdint>
 #include <cfloat>
 
-#include "../typedefs.h"
-
 
 class Math {
 

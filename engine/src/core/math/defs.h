@@ -3,7 +3,22 @@
 #ifndef MATH_DEFS
 #define MATH_DEFS
 
+#define Math_PI 3.1415926535897932384626433833
+#define Math_E 2.7182818284590452353602874714 
 
+
+enum ClockDirection {
+	CLOCKWISE,
+	COUNTERCLOCKWISE
+};
+
+
+enum Side {
+	SIDE_LEFT,
+	SIDE_TOP,
+	SIDE_RIGHT,
+	SIDE_BOTTOM
+};
 
 
 #endif	//MATH_DEFS

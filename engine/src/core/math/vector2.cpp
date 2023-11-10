@@ -1,8 +1,6 @@
 #include "vector2.h"
 using Engine::Vector2;
 
-inline Vector2::Vector2() {}
-
 inline Vector2::Vector2(const float _x, const float _y) {
 	x = _x;
 	y = _y;

@@ -5,7 +5,7 @@ Application::Application():
     config("format.cfg"),
     executing(false),
     primative_window(nullptr){
-        this->debug = to_bool(config.get("App.Debug.Enable"));
+        this->debug = to_bool(config.get("Debug.Enable"));
         SDL_Init(SDL_INIT_EVERYTHING);
 }
 

@@ -133,6 +133,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="engine\src\core\error\error_list.cpp" />
+    <ClCompile Include="engine\src\core\error\error_macro.cpp" />
     <ClCompile Include="engine\src\core\math\vector2.cpp" />
     <ClCompile Include="engine\src\utility\Debug_Logger.cpp" />
     <ClCompile Include="engine\src\Application.cpp" />
@@ -142,7 +143,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="engine\src\core\typedef.h" />
+    <ClInclude Include="engine\src\core\error\error.h" />
     <ClInclude Include="engine\src\core\error\error_list.h" />
+    <ClInclude Include="engine\src\core\error\error_macro.h" />
     <ClInclude Include="engine\src\core\math\defs.h" />
     <ClInclude Include="engine\src\core\math\func.h" />
     <ClInclude Include="engine\src\core\math\vector2.h" />

@@ -1,8 +1,8 @@
 #pragma once
 
 #include "func.h"
+#include "../error/error.h"
 #include <ostream>
-
 
 namespace Engine{
 
@@ -28,7 +28,12 @@ namespace Engine{
 		};
 
 		inline float &operator[](int _idx) {
-			/// warn: unsafe operation, need to check if it's 0 <= _idx < 2
+			DEV_ASSERTION((unsigned int)_idx < 2);
+			return coord[_idx];
+		}
+
+		inline const float& operator[](int _idx) const {
+			DEV_ASSERTION((unsigned int)_idx < 2);
 			return coord[_idx];
 		}
 
@@ -65,7 +70,7 @@ namespace Engine{
 
 		//operator Vector2i() const;
 
-		Vector2();
+		Vector2() {}
 		Vector2(const float _x, const float _y);
 
 		friend std::ostream& operator<<(std::ostream &ofs, const Vector2 &_vector2) {
