@@ -71,10 +71,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="engine\src\utility\Timer.h">
+    <ClInclude Include="engine\src\utility\timer.h">
       <Filter>標頭檔\utility</Filter>
     </ClInclude>
-    <ClInclude Include="engine\src\utility\Debug_Logger.h">
+    <ClInclude Include="engine\src\utility\logger.h">
       <Filter>標頭檔\utility</Filter>
     </ClInclude>
     <ClInclude Include="engine\src\utility\utility.h">

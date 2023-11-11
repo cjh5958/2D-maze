@@ -150,12 +150,12 @@
     <ClInclude Include="engine\src\core\math\defs.h" />
     <ClInclude Include="engine\src\core\math\func.h" />
     <ClInclude Include="engine\src\core\math\vector2.h" />
-    <ClInclude Include="engine\src\utility\Debug_Logger.h" />
+    <ClInclude Include="engine\src\utility\logger.h" />
     <ClInclude Include="engine\Engine.h" />
     <ClInclude Include="engine\src\Application.h" />
     <ClInclude Include="engine\src\cfg.h" />
     <ClInclude Include="engine\src\setup.h" />
-    <ClInclude Include="engine\src\utility\Timer.h" />
+    <ClInclude Include="engine\src\utility\timer.h" />
     <ClInclude Include="engine\src\utility\utility.h" />
     <ClInclude Include="engine\test\test.h" />
   </ItemGroup>

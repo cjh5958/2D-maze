@@ -24,7 +24,7 @@ Engine.h
 │   ├── error
 │   │   │
 │   │   ├── error list
-│   │   └── error catch
+│   │   └── error macro
 │   ├── math
 │   │   │
 │   │   ├── crypto
@@ -52,7 +52,7 @@ Engine.h
 ├── string
 ├── utility
 │   │
-│   ├── debug logger
+│   ├── logger
 │   ├── timer
 │   └── utility.h
 ├── application
