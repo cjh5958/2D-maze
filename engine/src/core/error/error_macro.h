@@ -16,12 +16,16 @@ void _err_print(const char* _func, const char* _file, int _line, const char* err
 		(void)0;											\
 	}
 
+#ifdef __MSVC__
 #define CRASH_INSTANTLY()									\
 	if(true) {												\
 		__debugbreak();										\
 	} else {												\
 		(void)0;											\
 	}
+#else
+#define CRASH_INSTANTLY() __builtin_trap()
+#endif
 
 #ifdef STRICT_DEV_ENABLED
 #define DEV_ASSERTION(x)																							\

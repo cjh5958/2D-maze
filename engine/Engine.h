@@ -1,5 +1,7 @@
-#ifndef _ENGINE_H_
-#define _ENGINE_H_
+#pragma once 
+
+#ifndef ENGINE_H
+#define ENGINE_H
 
 #include "src/setup.h"
 #include "src/Application.h"

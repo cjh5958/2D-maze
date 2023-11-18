@@ -1,7 +1,9 @@
 #pragma once
 #include <iostream>
 #include <fstream>
+#ifdef WIN32
 #include <Windows.h>
+#endif
 
 namespace Engine{
 	namespace Utility{
